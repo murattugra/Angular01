@@ -19,4 +19,12 @@ export class AppComponent {
       this.parentCount -= 1;
   }
 
+  EventMessage(message: string): void {
+
+    alert(message);
+
+  }
+
+
+
 }
