@@ -3,7 +3,41 @@
 <button class='btn btn-lg btn-danger' (click)='RemoveUser()'>Remove User</button>
 
 <child></child>
-
+<p> EVENTS </p>
 <p>Click Event</p>
 
 <button class="btn btn-lg btn-primary" (click)='EventMessage("click")'>Message</button>
+
+<p>Double Click</p>
+
+<div (dblclick)='EventMessage("dbClick")'>
+  message
+</div>
+
+<p>Focus Event</p>
+
+<input type="text" class="form-control" (focus)='EventMessage2("Focus")' />
+
+
+<p>Blur Event</p>
+
+<input type="text" class="form-control" (blur)='EventMessage2("Blur")' />
+
+
+<p>MouseDown Event</p>
+
+<div (mousedown)='EventMessage2("MouseDown")'>
+  MousDown
+</div>
+
+
+<p>MouseUp</p>
+
+<div (mouseup)='EventMessage2("MouseUp")'>
+  Mouse Up
+</div>
+
+<p>Mouse Move</p>
+
+
+<button class="btn btn-lg btn-success" (mousemove)='EventMessage("Mouse Move")'>Mouse Move</button>

@@ -25,6 +25,10 @@ export class AppComponent {
 
   }
 
+  EventMessage2(message: string): void {
+    console.log(message);
+  }
+
 
 
 }
