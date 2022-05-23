@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { promises } from 'dns';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  title = 'Angular';
+
+  TitleValue(): void {
+    alert(this.title);
+  }
 
   public parentCount: number = 0;
 
@@ -28,6 +35,12 @@ export class AppComponent {
   EventMessage2(message: string): void {
     console.log(message);
   }
+
+
+
+
+
+
 
 
 

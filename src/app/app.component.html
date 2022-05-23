@@ -3,6 +3,8 @@
 <button class='btn btn-lg btn-danger' (click)='RemoveUser()'>Remove User</button>
 
 <child></child>
+
+
 <p> EVENTS </p>
 <p>Click Event</p>
 
@@ -41,3 +43,9 @@
 
 
 <button class="btn btn-lg btn-success" (mousemove)='EventMessage("Mouse Move")'>Mouse Move</button>
+
+
+<p>{{title}}</p>
+
+<input type="text" value="{{title}}" />
+<button (click)='TitleValue()'>Title Value</button>
