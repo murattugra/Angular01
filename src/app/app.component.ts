@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ilk-Projem-App';
+
+  public parentCount: number = 0;
+
+  AddUser() {
+
+    this.parentCount += 1;
+  }
+
+  RemoveUser() {
+    if (this.parentCount > 0)
+      this.parentCount -= 1;
+  }
+
 }
